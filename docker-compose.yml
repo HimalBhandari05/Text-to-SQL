@@ -1,0 +1,23 @@
+services:
+  database:
+    image: postgres:latest # this pulls the latest version of PostgreSQL from Docker Hub
+
+    container_name: postgres_database # container with name postgres_database is created
+
+    env_file:
+      # it points to a file named .env in the same directory as the compose file. It contains the environment variables. 
+      - .env
+  
+    ports:
+      # yo chai ports for connecting to the database.
+      - 5400:5432
+
+    volumes:
+      # it attaches a volume to container. hostmachine ko seed file lai container ko /docker-entrypoint-initdb.d/seed.sql ma mount garxa.
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql
+      - postgres_data:/var/lib/postgresql/data # this is for persisting the data of the database. It creates a named volume called postgres_data and mounts it to the container's /var/lib/postgresql/data directory.
+    restart: always
+    # yesle container restart garxa if it crashes or if docker daemon restarts.
+
+volumes:
+  postgres_data:
