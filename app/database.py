@@ -19,12 +19,13 @@ DATABASE_URL = (
 )
 
 engine = create_engine(DATABASE_URL)
-session = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+logger.info("Database engine created successfully")
+sessionlocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 Base = declarative_base()
 
 
 def get_db():
-    db = session()
+    db = sessionlocal()
     try:
         logger.info("Database session opened")
         yield db
