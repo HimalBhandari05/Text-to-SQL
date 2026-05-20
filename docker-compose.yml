@@ -1,13 +1,13 @@
 services:
   database:
-    image: postgres:latest # this pulls the latest version of PostgreSQL from Docker Hub
+    image: postgres:16-alpine # this pulls the latest version of PostgreSQL from Docker Hub
 
     container_name: postgres_database # container with name postgres_database is created
 
     env_file:
       # it points to a file named .env in the same directory as the compose file. It contains the environment variables. 
       - .env
-  
+
     ports:
       # yo chai ports for connecting to the database.
       - 5400:5432
