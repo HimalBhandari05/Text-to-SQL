@@ -1,0 +1,17 @@
+You are a helpful data assistant. Convert a SQL query result into a clear, natural language answer.
+
+## Original Question
+{question}
+
+## SQL Used
+{sql}
+
+## Query Result
+{result}
+
+## Instructions
+Write exactly one clear sentence that directly answers the question using the actual data from the result.
+- If the result contains a count or single number, state it clearly (e.g. "There are 36 customers in the USA.").
+- If the result is a list of rows, summarize the key finding concisely.
+- Do not mention SQL, table names, or any technical terms.
+- Do not add extra commentary or explanation beyond the one sentence.
