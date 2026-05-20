@@ -1,0 +1,1091 @@
+[
+  {
+    "id": 1,
+    "question": "List all products",
+    "sql": "SELECT * FROM products;",
+    "status": "success",
+    "row_count": 110,
+    "sample": [
+      {
+        "productCode": "S10_1678",
+        "productName": "1969 Harley Davidson Ultimate Chopper",
+        "productLine": "Motorcycles",
+        "productScale": "1:10",
+        "productVendor": "Min Lin Diecast",
+        "productDescription": "This replica features working kickstand, front suspension, gear-shift lever, footbrake lever, drive chain, wheels and steering. All parts are particularly delicate due to their precise scale and require special care and attention.",
+        "quantityInStock": 7933,
+        "buyPrice": "48.81",
+        "MSRP": "95.70"
+      },
+      {
+        "productCode": "S10_1949",
+        "productName": "1952 Alpine Renault 1300",
+        "productLine": "Classic Cars",
+        "productScale": "1:10",
+        "productVendor": "Classic Metal Creations",
+        "productDescription": "Turnable front wheels; steering function; detailed interior; detailed engine; opening hood; opening trunk; opening doors; and detailed chassis.",
+        "quantityInStock": 7305,
+        "buyPrice": "98.58",
+        "MSRP": "214.30"
+      },
+      {
+        "productCode": "S10_2016",
+        "productName": "1996 Moto Guzzi 1100i",
+        "productLine": "Motorcycles",
+        "productScale": "1:10",
+        "productVendor": "Highway 66 Mini Classics",
+        "productDescription": "Official Moto Guzzi logos and insignias, saddle bags located on side of motorcycle, detailed engine, working steering, working suspension, two leather seats, luggage rack, dual exhaust pipes, small saddle bag located on handle bars, two-tone paint with chrome accents, superior die-cast detail , rotating wheels , working kick stand, diecast metal with plastic parts and baked enamel finish.",
+        "quantityInStock": 6625,
+        "buyPrice": "68.99",
+        "MSRP": "118.94"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Get all customers",
+    "sql": "SELECT * FROM customers;",
+    "status": "success",
+    "row_count": 122,
+    "sample": [
+      {
+        "customerNumber": 103,
+        "customerName": "Atelier graphique",
+        "contactLastName": "Schmitt",
+        "contactFirstName": "Carine ",
+        "phone": "40.32.2555",
+        "addressLine1": "54, rue Royale",
+        "addressLine2": null,
+        "city": "Nantes",
+        "state": null,
+        "postalCode": "44000",
+        "country": "France",
+        "salesRepEmployeeNumber": 1370,
+        "creditLimit": "21000.00"
+      },
+      {
+        "customerNumber": 112,
+        "customerName": "Signal Gift Stores",
+        "contactLastName": "King",
+        "contactFirstName": "Jean",
+        "phone": "7025551838",
+        "addressLine1": "8489 Strong St.",
+        "addressLine2": null,
+        "city": "Las Vegas",
+        "state": "NV",
+        "postalCode": "83030",
+        "country": "USA",
+        "salesRepEmployeeNumber": 1166,
+        "creditLimit": "71800.00"
+      },
+      {
+        "customerNumber": 114,
+        "customerName": "Australian Collectors, Co.",
+        "contactLastName": "Ferguson",
+        "contactFirstName": "Peter",
+        "phone": "03 9520 4555",
+        "addressLine1": "636 St Kilda Road",
+        "addressLine2": "Level 3",
+        "city": "Melbourne",
+        "state": "Victoria",
+        "postalCode": "3004",
+        "country": "Australia",
+        "salesRepEmployeeNumber": 1611,
+        "creditLimit": "117300.00"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Show all orders",
+    "sql": "SELECT * FROM orders;",
+    "status": "success",
+    "row_count": 326,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "orderDate": "2003-01-06",
+        "requiredDate": "2003-01-13",
+        "shippedDate": "2003-01-10",
+        "status": "Shipped",
+        "comments": null,
+        "customerNumber": 363
+      },
+      {
+        "orderNumber": 10101,
+        "orderDate": "2003-01-09",
+        "requiredDate": "2003-01-18",
+        "shippedDate": "2003-01-11",
+        "status": "Shipped",
+        "comments": "Check on availability.",
+        "customerNumber": 128
+      },
+      {
+        "orderNumber": 10102,
+        "orderDate": "2003-01-10",
+        "requiredDate": "2003-01-18",
+        "shippedDate": "2003-01-14",
+        "status": "Shipped",
+        "comments": null,
+        "customerNumber": 181
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "List all employees",
+    "sql": "SELECT * FROM employees;",
+    "status": "success",
+    "row_count": 23,
+    "sample": [
+      {
+        "employeeNumber": 1002,
+        "lastName": "Murphy",
+        "firstName": "Diane",
+        "extension": "x5800",
+        "email": "dmurphy@classicmodelcars.com",
+        "officeCode": "1",
+        "reportsTo": null,
+        "jobTitle": "President"
+      },
+      {
+        "employeeNumber": 1056,
+        "lastName": "Patterson",
+        "firstName": "Mary",
+        "extension": "x4611",
+        "email": "mpatterso@classicmodelcars.com",
+        "officeCode": "1",
+        "reportsTo": 1002,
+        "jobTitle": "VP Sales"
+      },
+      {
+        "employeeNumber": 1076,
+        "lastName": "Firrelli",
+        "firstName": "Jeff",
+        "extension": "x9273",
+        "email": "jfirrelli@classicmodelcars.com",
+        "officeCode": "1",
+        "reportsTo": 1002,
+        "jobTitle": "VP Marketing"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Get all offices",
+    "sql": "SELECT * FROM offices;",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "officeCode": "1",
+        "city": "San Francisco",
+        "phone": "+1 650 219 4782",
+        "addressLine1": "100 Market Street",
+        "addressLine2": "Suite 300",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94080",
+        "territory": "NA"
+      },
+      {
+        "officeCode": "2",
+        "city": "Boston",
+        "phone": "+1 215 837 0825",
+        "addressLine1": "1550 Court Place",
+        "addressLine2": "Suite 102",
+        "state": "MA",
+        "country": "USA",
+        "postalCode": "02107",
+        "territory": "NA"
+      },
+      {
+        "officeCode": "3",
+        "city": "NYC",
+        "phone": "+1 212 555 3000",
+        "addressLine1": "523 East 53rd Street",
+        "addressLine2": "apt. 5A",
+        "state": "NY",
+        "country": "USA",
+        "postalCode": "10022",
+        "territory": "NA"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Show all product lines",
+    "sql": "SELECT * FROM productlines;",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "productLine": "Classic Cars",
+        "textDescription": "Attention car enthusiasts: Make your wildest car ownership dreams come true. Whether you are looking for classic muscle cars, dream sports cars or movie-inspired miniatures, you will find great choices in this category. These replicas feature superb attention to detail and craftsmanship and offer features such as working steering system, opening forward compartment, opening rear trunk with removable spare wheel, 4-wheel independent spring suspension, and so on. The models range in size from 1:10 to 1:24 scale and include numerous limited edition and several out-of-production vehicles. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office.",
+        "htmlDescription": null,
+        "image": null
+      },
+      {
+        "productLine": "Motorcycles",
+        "textDescription": "Our motorcycles are state of the art replicas of classic as well as contemporary motorcycle legends such as Harley Davidson, Ducati and Vespa. Models contain stunning details such as official logos, rotating wheels, working kickstand, front suspension, gear-shift lever, footbrake lever, and drive chain. Materials used include diecast and plastic. The models range in size from 1:10 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. All models come fully assembled and ready for display in the home or office. Most include a certificate of authenticity.",
+        "htmlDescription": null,
+        "image": null
+      },
+      {
+        "productLine": "Planes",
+        "textDescription": "Unique, diecast airplane and helicopter replicas suitable for collections, as well as home, office or classroom decorations. Models contain stunning details such as official logos and insignias, rotating jet engines and propellers, retractable wheels, and so on. Most come fully assembled and with a certificate of authenticity from their manufacturers.",
+        "htmlDescription": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "List all payments",
+    "sql": "SELECT * FROM payments;",
+    "status": "success",
+    "row_count": 273,
+    "sample": [
+      {
+        "customerNumber": 103,
+        "checkNumber": "HQ336336",
+        "paymentDate": "2004-10-19",
+        "amount": "6066.78"
+      },
+      {
+        "customerNumber": 103,
+        "checkNumber": "JM555205",
+        "paymentDate": "2003-06-05",
+        "amount": "14571.44"
+      },
+      {
+        "customerNumber": 103,
+        "checkNumber": "OM314933",
+        "paymentDate": "2004-12-18",
+        "amount": "1676.14"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Get product names and prices",
+    "sql": "SELECT \"productName\", \"buyPrice\" FROM products;",
+    "status": "success",
+    "row_count": 110,
+    "sample": [
+      {
+        "productName": "1969 Harley Davidson Ultimate Chopper",
+        "buyPrice": "48.81"
+      },
+      {
+        "productName": "1952 Alpine Renault 1300",
+        "buyPrice": "98.58"
+      },
+      {
+        "productName": "1996 Moto Guzzi 1100i",
+        "buyPrice": "68.99"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Get customer names and cities",
+    "sql": "SELECT \"customerName\", city FROM customers;",
+    "status": "success",
+    "row_count": 122,
+    "sample": [
+      {
+        "customerName": "Atelier graphique",
+        "city": "Nantes"
+      },
+      {
+        "customerName": "Signal Gift Stores",
+        "city": "Las Vegas"
+      },
+      {
+        "customerName": "Australian Collectors, Co.",
+        "city": "Melbourne"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "List employee first and last names",
+    "sql": "SELECT \"firstName\", \"lastName\" FROM employees;",
+    "status": "success",
+    "row_count": 23,
+    "sample": [
+      {
+        "firstName": "Diane",
+        "lastName": "Murphy"
+      },
+      {
+        "firstName": "Mary",
+        "lastName": "Patterson"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Firrelli"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "Get all order dates",
+    "sql": "SELECT \"orderNumber\", \"orderDate\" FROM orders;",
+    "status": "success",
+    "row_count": 326,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "orderDate": "2003-01-06"
+      },
+      {
+        "orderNumber": 10101,
+        "orderDate": "2003-01-09"
+      },
+      {
+        "orderNumber": 10102,
+        "orderDate": "2003-01-10"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Show product vendor list",
+    "sql": "SELECT DISTINCT \"productVendor\" FROM products;",
+    "status": "success",
+    "row_count": 13,
+    "sample": [
+      {
+        "productVendor": "Welly Diecast Productions"
+      },
+      {
+        "productVendor": "Motor City Art Classics"
+      },
+      {
+        "productVendor": "Classic Metal Creations"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Get all product codes",
+    "sql": "SELECT \"productCode\" FROM products;",
+    "status": "success",
+    "row_count": 110,
+    "sample": [
+      {
+        "productCode": "S10_1678"
+      },
+      {
+        "productCode": "S10_1949"
+      },
+      {
+        "productCode": "S10_2016"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "List all countries from offices",
+    "sql": "SELECT DISTINCT country FROM offices;",
+    "status": "success",
+    "row_count": 5,
+    "sample": [
+      {
+        "country": "USA"
+      },
+      {
+        "country": "France"
+      },
+      {
+        "country": "Japan"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Show all order statuses",
+    "sql": "SELECT DISTINCT status FROM orders;",
+    "status": "success",
+    "row_count": 6,
+    "sample": [
+      {
+        "status": "Shipped"
+      },
+      {
+        "status": "In Process"
+      },
+      {
+        "status": "Disputed"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Get all payment amounts",
+    "sql": "SELECT \"customerNumber\", amount FROM payments;",
+    "status": "success",
+    "row_count": 273,
+    "sample": [
+      {
+        "customerNumber": 103,
+        "amount": "6066.78"
+      },
+      {
+        "customerNumber": 103,
+        "amount": "14571.44"
+      },
+      {
+        "customerNumber": 103,
+        "amount": "1676.14"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "List all job titles",
+    "sql": "SELECT DISTINCT \"jobTitle\" FROM employees;",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "jobTitle": "VP Sales"
+      },
+      {
+        "jobTitle": "Sales Manager (APAC)"
+      },
+      {
+        "jobTitle": "Sale Manager (EMEA)"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Get customer phone numbers",
+    "sql": "SELECT \"customerName\", phone FROM customers;",
+    "status": "success",
+    "row_count": 122,
+    "sample": [
+      {
+        "customerName": "Atelier graphique",
+        "phone": "40.32.2555"
+      },
+      {
+        "customerName": "Signal Gift Stores",
+        "phone": "7025551838"
+      },
+      {
+        "customerName": "Australian Collectors, Co.",
+        "phone": "03 9520 4555"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Show product MSRP values",
+    "sql": "SELECT \"productName\", \"MSRP\" FROM products;",
+    "status": "success",
+    "row_count": 110,
+    "sample": [
+      {
+        "productName": "1969 Harley Davidson Ultimate Chopper",
+        "MSRP": "95.70"
+      },
+      {
+        "productName": "1952 Alpine Renault 1300",
+        "MSRP": "214.30"
+      },
+      {
+        "productName": "1996 Moto Guzzi 1100i",
+        "MSRP": "118.94"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "List order numbers",
+    "sql": "SELECT \"orderNumber\" FROM orders;",
+    "status": "success",
+    "row_count": 326,
+    "sample": [
+      {
+        "orderNumber": 10100
+      },
+      {
+        "orderNumber": 10101
+      },
+      {
+        "orderNumber": 10102
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "question": "Get orders with customer names",
+    "sql": "SELECT o.\"orderNumber\", o.\"orderDate\", c.\"customerName\"\n            FROM orders o\n            JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\";",
+    "status": "success",
+    "row_count": 326,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "orderDate": "2003-01-06",
+        "customerName": "Online Diecast Creations Co."
+      },
+      {
+        "orderNumber": 10101,
+        "orderDate": "2003-01-09",
+        "customerName": "Blauer See Auto, Co."
+      },
+      {
+        "orderNumber": 10102,
+        "orderDate": "2003-01-10",
+        "customerName": "Vitachrome Inc."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "question": "Get employees with office city",
+    "sql": "SELECT e.\"firstName\", e.\"lastName\", o.city\n            FROM employees e\n            JOIN offices o ON e.\"officeCode\" = o.\"officeCode\";",
+    "status": "success",
+    "row_count": 23,
+    "sample": [
+      {
+        "firstName": "Diane",
+        "lastName": "Murphy",
+        "city": "San Francisco"
+      },
+      {
+        "firstName": "Mary",
+        "lastName": "Patterson",
+        "city": "San Francisco"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Firrelli",
+        "city": "San Francisco"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Get payments with customer names",
+    "sql": "SELECT c.\"customerName\", p.amount, p.\"paymentDate\"\n            FROM payments p\n            JOIN customers c ON p.\"customerNumber\" = c.\"customerNumber\";",
+    "status": "success",
+    "row_count": 273,
+    "sample": [
+      {
+        "customerName": "Atelier graphique",
+        "amount": "6066.78",
+        "paymentDate": "2004-10-19"
+      },
+      {
+        "customerName": "Atelier graphique",
+        "amount": "14571.44",
+        "paymentDate": "2003-06-05"
+      },
+      {
+        "customerName": "Atelier graphique",
+        "amount": "1676.14",
+        "paymentDate": "2004-12-18"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Get order details with product names",
+    "sql": "SELECT od.\"orderNumber\", p.\"productName\", od.\"quantityOrdered\", od.\"priceEach\"\n            FROM orderdetails od\n            JOIN products p ON od.\"productCode\" = p.\"productCode\";",
+    "status": "success",
+    "row_count": 2996,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "productName": "1917 Grand Touring Sedan",
+        "quantityOrdered": 30,
+        "priceEach": "136.00"
+      },
+      {
+        "orderNumber": 10100,
+        "productName": "1911 Ford Town Car",
+        "quantityOrdered": 50,
+        "priceEach": "55.09"
+      },
+      {
+        "orderNumber": 10100,
+        "productName": "1932 Alfa Romeo 8C2300 Spider Sport",
+        "quantityOrdered": 22,
+        "priceEach": "75.46"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "question": "Get products with product line description",
+    "sql": "SELECT p.\"productName\", pl.\"textDescription\"\n            FROM products p\n            JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\";",
+    "status": "success",
+    "row_count": 110,
+    "sample": [
+      {
+        "productName": "1969 Harley Davidson Ultimate Chopper",
+        "textDescription": "Our motorcycles are state of the art replicas of classic as well as contemporary motorcycle legends such as Harley Davidson, Ducati and Vespa. Models contain stunning details such as official logos, rotating wheels, working kickstand, front suspension, gear-shift lever, footbrake lever, and drive chain. Materials used include diecast and plastic. The models range in size from 1:10 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. All models come fully assembled and ready for display in the home or office. Most include a certificate of authenticity."
+      },
+      {
+        "productName": "1952 Alpine Renault 1300",
+        "textDescription": "Attention car enthusiasts: Make your wildest car ownership dreams come true. Whether you are looking for classic muscle cars, dream sports cars or movie-inspired miniatures, you will find great choices in this category. These replicas feature superb attention to detail and craftsmanship and offer features such as working steering system, opening forward compartment, opening rear trunk with removable spare wheel, 4-wheel independent spring suspension, and so on. The models range in size from 1:10 to 1:24 scale and include numerous limited edition and several out-of-production vehicles. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office."
+      },
+      {
+        "productName": "1996 Moto Guzzi 1100i",
+        "textDescription": "Our motorcycles are state of the art replicas of classic as well as contemporary motorcycle legends such as Harley Davidson, Ducati and Vespa. Models contain stunning details such as official logos, rotating wheels, working kickstand, front suspension, gear-shift lever, footbrake lever, and drive chain. Materials used include diecast and plastic. The models range in size from 1:10 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. All models come fully assembled and ready for display in the home or office. Most include a certificate of authenticity."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "question": "Get customers with sales rep names",
+    "sql": "SELECT c.\"customerName\", e.\"firstName\", e.\"lastName\"\n            FROM customers c\n            JOIN employees e ON c.\"salesRepEmployeeNumber\" = e.\"employeeNumber\";",
+    "status": "success",
+    "row_count": 100,
+    "sample": [
+      {
+        "customerName": "Atelier graphique",
+        "firstName": "Gerard",
+        "lastName": "Hernandez"
+      },
+      {
+        "customerName": "Signal Gift Stores",
+        "firstName": "Leslie",
+        "lastName": "Thompson"
+      },
+      {
+        "customerName": "Australian Collectors, Co.",
+        "firstName": "Andy",
+        "lastName": "Fixter"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Get orders with customer city",
+    "sql": "SELECT o.\"orderNumber\", o.\"orderDate\", c.city\n            FROM orders o\n            JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\";",
+    "status": "success",
+    "row_count": 326,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "orderDate": "2003-01-06",
+        "city": "Nashua"
+      },
+      {
+        "orderNumber": 10101,
+        "orderDate": "2003-01-09",
+        "city": "Frankfurt"
+      },
+      {
+        "orderNumber": 10102,
+        "orderDate": "2003-01-10",
+        "city": "NYC"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Get employees and their manager",
+    "sql": "SELECT e.\"firstName\" AS employee, m.\"firstName\" AS manager\n            FROM employees e\n            LEFT JOIN employees m ON e.\"reportsTo\" = m.\"employeeNumber\";",
+    "status": "success",
+    "row_count": 23,
+    "sample": [
+      {
+        "employee": "Diane",
+        "manager": null
+      },
+      {
+        "employee": "Mary",
+        "manager": "Diane"
+      },
+      {
+        "employee": "Jeff",
+        "manager": "Diane"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Get orderdetails with product vendor",
+    "sql": "SELECT od.\"orderNumber\", p.\"productVendor\", od.\"quantityOrdered\"\n            FROM orderdetails od\n            JOIN products p ON od.\"productCode\" = p.\"productCode\";",
+    "status": "success",
+    "row_count": 2996,
+    "sample": [
+      {
+        "orderNumber": 10100,
+        "productVendor": "Welly Diecast Productions",
+        "quantityOrdered": 30
+      },
+      {
+        "orderNumber": 10100,
+        "productVendor": "Motor City Art Classics",
+        "quantityOrdered": 50
+      },
+      {
+        "orderNumber": 10100,
+        "productVendor": "Exoto Designs",
+        "quantityOrdered": 22
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Get payments with customer country",
+    "sql": "SELECT c.\"customerName\", c.country, p.amount\n            FROM payments p\n            JOIN customers c ON p.\"customerNumber\" = c.\"customerNumber\";",
+    "status": "success",
+    "row_count": 273,
+    "sample": [
+      {
+        "customerName": "Atelier graphique",
+        "country": "France",
+        "amount": "6066.78"
+      },
+      {
+        "customerName": "Atelier graphique",
+        "country": "France",
+        "amount": "14571.44"
+      },
+      {
+        "customerName": "Atelier graphique",
+        "country": "France",
+        "amount": "1676.14"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Count customers per country",
+    "sql": "SELECT country, COUNT(*) AS customer_count\n            FROM customers\n            GROUP BY country\n            ORDER BY customer_count DESC;",
+    "status": "success",
+    "row_count": 28,
+    "sample": [
+      {
+        "country": "USA",
+        "customer_count": 36
+      },
+      {
+        "country": "Germany",
+        "customer_count": 13
+      },
+      {
+        "country": "France",
+        "customer_count": 12
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Total payments per customer",
+    "sql": "SELECT \"customerNumber\", SUM(amount) AS total_paid\n            FROM payments\n            GROUP BY \"customerNumber\"\n            ORDER BY total_paid DESC;",
+    "status": "success",
+    "row_count": 98,
+    "sample": [
+      {
+        "customerNumber": 141,
+        "total_paid": "715738.98"
+      },
+      {
+        "customerNumber": 124,
+        "total_paid": "584188.24"
+      },
+      {
+        "customerNumber": 114,
+        "total_paid": "180585.07"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Number of orders per status",
+    "sql": "SELECT status, COUNT(*) AS order_count\n            FROM orders\n            GROUP BY status;",
+    "status": "success",
+    "row_count": 6,
+    "sample": [
+      {
+        "status": "Shipped",
+        "order_count": 303
+      },
+      {
+        "status": "In Process",
+        "order_count": 6
+      },
+      {
+        "status": "Disputed",
+        "order_count": 3
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Products per product line",
+    "sql": "SELECT \"productLine\", COUNT(*) AS product_count\n            FROM products\n            GROUP BY \"productLine\";",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "productLine": "Classic Cars",
+        "product_count": 38
+      },
+      {
+        "productLine": "Trains",
+        "product_count": 3
+      },
+      {
+        "productLine": "Planes",
+        "product_count": 12
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Employees per office",
+    "sql": "SELECT \"officeCode\", COUNT(*) AS employee_count\n            FROM employees\n            GROUP BY \"officeCode\";",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "officeCode": "6",
+        "employee_count": 4
+      },
+      {
+        "officeCode": "2",
+        "employee_count": 2
+      },
+      {
+        "officeCode": "4",
+        "employee_count": 5
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Total stock per product vendor",
+    "sql": "SELECT \"productVendor\", SUM(\"quantityInStock\") AS total_stock\n            FROM products\n            GROUP BY \"productVendor\"\n            ORDER BY total_stock DESC;",
+    "status": "success",
+    "row_count": 13,
+    "sample": [
+      {
+        "productVendor": "Gearbox Collectibles",
+        "total_stock": 60495
+      },
+      {
+        "productVendor": "Min Lin Diecast",
+        "total_stock": 50089
+      },
+      {
+        "productVendor": "Classic Metal Creations",
+        "total_stock": 45408
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Average buy price per product line",
+    "sql": "SELECT \"productLine\", ROUND(AVG(\"buyPrice\"), 2) AS avg_buy_price\n            FROM products\n            GROUP BY \"productLine\";",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "productLine": "Classic Cars",
+        "avg_buy_price": "64.45"
+      },
+      {
+        "productLine": "Trains",
+        "avg_buy_price": "43.92"
+      },
+      {
+        "productLine": "Planes",
+        "avg_buy_price": "49.63"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Orders per customer",
+    "sql": "SELECT \"customerNumber\", COUNT(*) AS order_count\n            FROM orders\n            GROUP BY \"customerNumber\"\n            ORDER BY order_count DESC;",
+    "status": "success",
+    "row_count": 98,
+    "sample": [
+      {
+        "customerNumber": 141,
+        "order_count": 26
+      },
+      {
+        "customerNumber": 124,
+        "order_count": 17
+      },
+      {
+        "customerNumber": 148,
+        "order_count": 5
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Max MSRP per product line",
+    "sql": "SELECT \"productLine\", MAX(\"MSRP\") AS max_msrp\n            FROM products\n            GROUP BY \"productLine\";",
+    "status": "success",
+    "row_count": 7,
+    "sample": [
+      {
+        "productLine": "Classic Cars",
+        "max_msrp": "214.30"
+      },
+      {
+        "productLine": "Trains",
+        "max_msrp": "100.84"
+      },
+      {
+        "productLine": "Planes",
+        "max_msrp": "157.69"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Min buy price per vendor",
+    "sql": "SELECT \"productVendor\", MIN(\"buyPrice\") AS min_buy_price\n            FROM products\n            GROUP BY \"productVendor\";",
+    "status": "success",
+    "row_count": 13,
+    "sample": [
+      {
+        "productVendor": "Welly Diecast Productions",
+        "min_buy_price": "24.23"
+      },
+      {
+        "productVendor": "Motor City Art Classics",
+        "min_buy_price": "22.57"
+      },
+      {
+        "productVendor": "Classic Metal Creations",
+        "min_buy_price": "20.61"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Total number of customers",
+    "sql": "SELECT COUNT(*) AS total_customers FROM customers;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_customers": 122
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Total number of products",
+    "sql": "SELECT COUNT(*) AS total_products FROM products;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_products": 110
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Total revenue from payments",
+    "sql": "SELECT SUM(amount) AS total_revenue FROM payments;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_revenue": "8853839.23"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Average product price",
+    "sql": "SELECT ROUND(AVG(\"buyPrice\"), 2) AS avg_buy_price FROM products;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "avg_buy_price": "54.40"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "question": "Max payment amount",
+    "sql": "SELECT MAX(amount) AS max_payment FROM payments;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "max_payment": "120166.58"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Min payment amount",
+    "sql": "SELECT MIN(amount) AS min_payment FROM payments;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "min_payment": "615.45"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Count total orders",
+    "sql": "SELECT COUNT(*) AS total_orders FROM orders;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_orders": 326
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Total quantity in stock",
+    "sql": "SELECT SUM(\"quantityInStock\") AS total_stock FROM products;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_stock": 555131
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Average MSRP",
+    "sql": "SELECT ROUND(AVG(\"MSRP\"), 2) AS avg_msrp FROM products;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "avg_msrp": "100.44"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Number of employees",
+    "sql": "SELECT COUNT(*) AS total_employees FROM employees;",
+    "status": "success",
+    "row_count": 1,
+    "sample": [
+      {
+        "total_employees": 23
+      }
+    ]
+  }
+]
